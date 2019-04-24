@@ -7,6 +7,7 @@ const port   = 5000;
 
 app.use(express.static(path.join(__dirname + '/public')));
 app.use(express.static(path.join(__dirname + '/public/bower_components')));
+app.use(express.static(path.join(__dirname + '/public/dist')));
 app.set('view engine','ejs')
 
 app.get("/", (req, res) => {
