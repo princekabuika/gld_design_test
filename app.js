@@ -5,8 +5,8 @@ const path   = require('path');
 const port   = 5000;
 
 app.use(express.static(path.join(__dirname + '/public')));
-app.use(express.static(path.join(__dirname + '/public/bower_components')));
-app.use(express.static(path.join(__dirname + '/public/dist')));
+// app.use(express.static(path.join(__dirname + '/public/bower_components')));
+// app.use(express.static(path.join(__dirname + '/public/dist')));
 app.set('view engine','ejs')
 
 app.get("/", (req, res) => {
@@ -17,6 +17,9 @@ app.get("/home", (req, res) => {
 	 res.sendFile(path.join(__dirname + '/views/Home.html'));
 })
 
+app.get("/accounting", (req, res) => {
+	 res.sendFile(path.join(__dirname + '/views/home_pages_all.html'));
+})
 
 app.listen(process.env.PORT || 5000, () => {
 	console.log('server is up in port ' + process.env.PORT);	
