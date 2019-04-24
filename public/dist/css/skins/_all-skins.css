@@ -2,6 +2,12 @@
  * Skin: Blue
  * ----------
  */
+ 
+ .skin-blue .inside-div {
+  background-color: #367fa9;
+  color: #ffffff;
+}
+
 .skin-blue .main-header .navbar {
   background-color: #3c8dbc;
 }
@@ -47,6 +53,7 @@
   color: #ffffff;
   border-bottom: 0 solid transparent;
 }
+
 .skin-blue .main-header .logo:hover {
   background-color: #357ca5;
 }
@@ -300,6 +307,13 @@
   color: #ffffff;
   border-bottom: 0 solid transparent;
 }
+
+.skin-blue-light .inside-div {
+  background-color: #3c8dbc;
+  color: #ffffff;
+}
+
+
 .skin-blue.layout-top-nav .main-header > .logo:hover {
   background-color: #3b8ab8;
 }
@@ -394,6 +408,12 @@
   color: #4b646f;
   background: #1a2226;
 }
+
+.skin-black .inside-div {
+  color: #ffffff;
+  background: #1a2226;
+}
+
 .skin-black .sidebar-menu > li > a {
   border-left: 3px solid transparent;
 }
@@ -562,6 +582,13 @@
   color: #848484;
   background: #f9fafc;
 }
+
+
+.skin-black-light .inside-div {
+  color: #848484;
+  background: #f9fafc;
+}
+
 .skin-black-light .sidebar-menu > li > a {
   border-left: 3px solid transparent;
   font-weight: 600;
@@ -705,6 +732,10 @@
 .skin-green .sidebar-menu > li.header {
   color: #4b646f;
   background: #1a2226;
+}
+.skin-green .inside-div {
+  color: #ffffff;
+  background: #008749;
 }
 .skin-green .sidebar-menu > li > a {
   border-left: 3px solid transparent;
