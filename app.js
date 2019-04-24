@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname + '/public/bower_components')));
 app.set('view engine','ejs')
 
 app.get("/", (req, res) => {
-	 res.redirect('http://applelink.s3-website.us-east-2.amazonaws.com/login');
+	 res.sendFile(path.join(__dirname + '/index.html'));
 })
 
 app.get("/home", (req, res) => {
